@@ -164,3 +164,7 @@
     border-radius: 2px;
     will-change: top, opacity;
   }
+
+  .btn-flat {
+      background-color: #23ad61;
+  }
