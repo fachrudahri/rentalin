@@ -1,3 +1,30 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
+
 @media (min-width: 720px) {
     .form-cari {
         margin-left: 20px;
@@ -7,6 +34,16 @@
   @media (max-width: 640px){
       .modal {
           width: 70% !important;
+      }
+
+      .row-warna p {
+          padding-right: 10px !important;
+          padding-left: 10px !important;
+      }
+
+      .row-warna h4 {
+        padding-top: 50px;
+        margin-right: 0px !important;
       }
   }
 
@@ -165,6 +202,45 @@
     will-change: top, opacity;
   }
 
-  .btn-flat {
+  .modal-footer .btn-flat {
       background-color: #23ad61;
+  }
+
+  .container-info {
+      padding-left: 5%;
+      padding-right: 5%;
+  }
+
+
+  .gambar-info img {
+      margin-bottom: -5px;
+      border-radius: 8px;
+  }
+
+  .row-warna {
+      margin-top: 30px;
+      box-shadow: 1px 8px 18px #9e9e9e;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      padding: 0;
+  }
+
+  .row .gambar-info  {
+      padding: 0 0 !important;
+  }
+
+  .row-warna h4 {
+
+  }
+
+  .isi h4{
+    font-size:35px; 
+    font-weight: bold;
+    padding-top: 30px;
+    color: #23ad61;
+}
+
+  .isi p{
+      font-size:18px; 
   }
