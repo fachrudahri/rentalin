@@ -19,7 +19,7 @@
                 <div class="container-navbar">
                 <a href="index.html" class="brand-logo"><img src="img/logo.png" class="logo"></a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a class="waves-effect waves-light btn-small">login</a></li>
+                        <li><a class="waves-effect waves-light btn-small modal-trigger" href="#modal1">LOGIN</a></li>
                         <li class="batas-nav">|</li>
                         <li><a href="badges.html">Register</a></li>
                     </ul>
@@ -29,9 +29,37 @@
         </nav>
 
         <ul class="sidenav" id="mobile-nav">
-            <li><a href="#">Login</a></li>
+            <li><a href="#modal1" class="modal-trigger">Login</a></li>
             <li><a href="#">Register</a></li>
         </ul>
+
+        
+<!-- Modal Structure -->
+        <div id="modal1" class="modal modal-modif">
+            <div class="modal-content">
+                <h4>Login</h4>
+                <form action="">
+                        <div class="row">
+                                <div class="col s12">
+                                  <div class="row">
+                                    <div class="input-field col s12">
+                                      <input type="email" id="autocomplete-input" class="autocomplete">
+                                      <label for="autocomplete-input">Username</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                      <input type="password" id="autocomplete-input" class="autocomplete">
+                                      <label for="autocomplete-input">Password</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                    <a href="#" class="modal-close waves-effect waves-green btn-flat">Login</a>
+                                </div>
+                </form>
+            </div>
+
+        </div>
 
 <!-- Banner -->
         <div class="banner">
@@ -45,11 +73,11 @@
                         </div>
                         <div class="input input-tanggal col s12 m12 l12 xl12">
                                 <img src="img/calender.png" class="icon">
-                                <input type="text" placeholder="Tgl 4 Nov, 2018" class="datepicker col s7 offset-s2">
+                                <input type="text" placeholder="Masukkan Tanggal Berangkat" class="datepicker col s7 offset-s2">
                         </div>
                         <div class="input input-jam col s6 m6 l6 xl6">
                                 <img src="img/clock.png" class="icon">
-                                <input type="text" placeholder="14:00"class="timepicker col s5 xl8 offset-s1">
+                                <input type="text" placeholder="Jam Pergi"class="timepicker col s5 xl8 offset-s1">
                         </div>
                         <div class="input input-hari col s5 m5 l5 xl5 offset-s1 offset-m1 offset-l1 offset-xl1">
                                 <select class="browser-default">
@@ -59,7 +87,7 @@
                         </div>
                         <div class="input input-lokasi col s12 m12 l12 xl12">
                                 <img src="img/location.png" class="icon">
-                                <input type="text" placeholder="Jl.Kartini no.32, Siantar" class="col s7 offset-s2 validate">
+                                <input type="text" placeholder="Jalan yang dituju" class="col s7 offset-s2 validate">
                         </div>
                         <button class="btn waves-effect waves-light col s12" type="submit" name="action">CARI
                               </button>
@@ -69,6 +97,7 @@
                 </div>
             </div>
         </form>
+        
         </div>
 
 
@@ -82,6 +111,9 @@
     <script>
         const sideNav = document.querySelectorAll('.sidenav');
         M.Sidenav.init(sideNav);
+
+        const modals = document.querySelectorAll('.modal');
+        M.Modal.init(modals);
 
         const datePicker = document.querySelectorAll('.datepicker');
         M.Datepicker.init(datePicker);
