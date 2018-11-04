@@ -250,3 +250,40 @@
   .isi p{
       font-size:18px; 
   }
+
+.container-footer {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.footer-color {
+    background-color: #22313f;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    color: #fff
+}
+
+.footer-color ul li a {
+    color: #94a4a5;
+    line-height: 35px;
+}
+
+.footer-color ul li a:hover {
+    color: #fff;
+}
+
+.footer-color .row {
+    margin-bottom: 0px;
+}
+
+  .list img {
+      margin-top: -10px;
+      width: 200px;
+  }
+
+  .copyright {
+      font-size: 12px;
+      font-weight: lighter;
+      margin-left: 15px;
+      margin-top: -20px;
+  }
