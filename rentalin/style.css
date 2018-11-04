@@ -25,14 +25,20 @@
      *zoom: 1;
  }
 
-@media (min-width: 720px) {
+ @media (min-width: 720px) {
     .form-cari {
         margin-left: 20px;
     }
   }
 
+  @media(max-width: 768px){
+    .modal-modif {
+        width: 70% !important;
+    }
+  }
+
   @media (max-width: 640px){
-      .modal {
+      .modal-modif {
           width: 70% !important;
       }
 
