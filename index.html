@@ -75,23 +75,23 @@
                             </div>
                             <div class="input input-tanggal col s12 m12 l12 xl12">
                                     <img src="img/calender.png" class="icon">
-                                    <input type="text" placeholder="Tanggal Berangkat" class="datepicker col s7 offset-s2">
+                                    <input type="text" placeholder="Tanggal Berangkat" class="datepicker col s7 offset-s2" id="tanggal">
                             </div>
                             <div class="input input-jam col s6 m6 l6 xl6">
                                     <img src="img/clock.png" class="icon">
-                                    <input type="text" placeholder="Pukul"class="timepicker col s5 xl8 offset-s1">
+                                    <input type="text" placeholder="Pukul"class="timepicker col s5 xl8 offset-s1" id="jam">
                             </div>
                             <div class="input input-hari col s5 m5 l5 xl5 offset-s1 offset-m1 offset-l1 offset-xl1">
-                                    <select class="browser-default">
+                                    <select class="browser-default" id="hari">
                                     <option value="1">12 Jam</option>
                                     <option value="2">24 jam</option>
                                     </select>
                             </div>
                             <div class="input input-lokasi col s12 m12 l12 xl12">
                                     <img src="img/location.png" class="icon">
-                                    <input type="text" placeholder="Jalan yang dituju" class="col s7 offset-s2 validate">
+                                    <input type="text" placeholder="Jalan yang dituju" class="col s7 offset-s2 validate" id="lokasi">
                             </div>
-                            <button class="btn waves-effect waves-light col s12" type="submit" name="action">CARI
+                            <button class="btn waves-effect waves-light col s12" type="submit" type="submit" onclick="daftarRental()">CARI
                                 </button>
                         </div>
                     </div>
@@ -99,8 +99,8 @@
             </form>
         </div>
 
-<!-- Information -->
 
+<!-- Information -->
         <div class="container-info cf">
             <div class="row row-warna center">
                 <div class="gambar-info col s12 m4">
@@ -196,5 +196,6 @@
         const timePicker = document.querySelectorAll('.timepicker');
         M.Timepicker.init(timePicker);
     </script>
+
   </body>
 </html>
