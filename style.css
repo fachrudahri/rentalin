@@ -387,3 +387,80 @@ nav ul a {
 .rupiah a:hover {
     background-color: #f29b1a;
 }
+
+.border-invoice {
+    margin-top: 50px;
+    border: 5px solid #22313f;
+    padding-right: 20px;
+    margin-bottom: 30px;
+}
+
+.h-mobil {
+    background-color: #f1c37d;
+    color: #22313f;
+    font-weight: bold;
+    font-size: 18px;
+    height: 30px;
+}
+
+.h-mobil p {
+    margin-top: 1px;
+}
+
+
+.penjadwalan p{
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.penjadwalan span {
+    font-weight: lighter;
+}
+
+.garis {
+    width: 90%;
+}
+
+.h-kontak {
+    background-color: #f1c37d;
+    color: #22313f;
+    font-weight: bold;
+    font-size: 18px;
+    height: 30px;
+    margin-bottom: 35px;
+}
+
+.h-kontak p {
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
+
+
+.informasi-kontak h6{
+    color: #22313f;
+}
+
+.informasi-kontak .input-nama {
+    border: 1px solid #22313f;
+    padding-left: 10px;
+}
+
+.informasi-kontak input {
+    text-align: left;
+}
+
+.informasi-kontak input:focus {
+    box-shadow: none !important;
+}
+
+.informasi-kontak span {
+    font-weight: lighter;
+}
+
+.informasi-kontak .btn-small {
+    background-color: #f8c92b;
+    width: 200px;
+    font-size: 16px;
+    font-weight: bold;
+}
